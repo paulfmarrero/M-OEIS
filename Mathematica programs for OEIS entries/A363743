@@ -1,5 +1,7 @@
 # A363743 
 
+-> Mathematica program:
+
 Array[Floor@ Sqrt[Log10[#!]] &, 93,0]
 
-[A363743 OEIS Entry]{https://oeis.org/A363743}
+https://oeis.org/A363743
