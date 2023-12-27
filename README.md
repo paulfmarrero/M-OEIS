@@ -15,4 +15,4 @@ My main goal with this repository is to keep track of all the Mathematica progra
 
 This is the workflow I manage for this repository:
 
-**1)** 
+**1)** First, write the raw code for the Mathematica program and save it in a file named after the corresponding OEIS code entry, for example, **A363743**. The file should be saved in the designated folder: **Mathematica programs for OEIS entries**. This program must reproduce the exact amount of data published in the OEIS entry. Additionally, I like to include the link to the OEIS sequence.
