@@ -2,3 +2,6 @@
 Mathematica programs for OEIS sequences.
 
 This is a collection of Mathematica programs that I have implemented for some of the integer sequences from the [On-Line Encyclopedia of Integer Sequences](https://oeis.org). It is necessary to mention that not all Mathematica programs in this repository belong to sequences of my authorship, in fact at the moment I have only two sequences of my authorship registered in the OEIS database, and these sequences are:
+
+->[A348960](https://oeis.org/A348960): a(n) = floor(log_10(Pi*n!)).
+->[A363743](https://oeis.org/A363743): a(n) = floor(sqrt(log_10(n!))).
