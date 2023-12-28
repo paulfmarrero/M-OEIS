@@ -41,6 +41,8 @@ Finally, I run some tests for the Mathematica programs in the Wolfram cloud serv
 
 ## Acknoledgements.
 
+First of all, I would like to thank the OEIS user: [Sean A. Irvine](https://oeis.org/wiki/User:Sean_A._Irvine), for inspiring me to create this repository through his own repository of Java implementations for OEIS entries: [jOEIS](https://github.com/archmageirvine/joeis).
+
 
 
 
