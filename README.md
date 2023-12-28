@@ -49,10 +49,10 @@ Finally, I would like to express my gratitude to the staff and users of the On-L
 
 ## My contributions to the OEIS.
 
-If you want to check all my contributions to the Encyclopedia, then you can simply visit my [OEIS-Wikipedia](https://oeis.org/wiki/User:Paul_F._Marrero_Romero)
+If you want to check all my contributions to the Encyclopedia, then you can simply visit my OEIS-Wikipedia: [Paul F. Marrero Romero](https://oeis.org/wiki/User:Paul_F._Marrero_Romero)
 
 ---
 
 ## References.
 
-
+OEIS Foundation Inc. (2023), The On-Line Encyclopedia of Integer Sequences, Published electronically at https://oeis.org
