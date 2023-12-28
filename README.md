@@ -23,3 +23,20 @@ This is the workflow I manage for this repository:
 * The exact amount of data published on the OEIS entry.
 * Not more than two formulas (If any formula exists) reported on the On-Line Encyclopedia of Integer Sequences, used to reproduce the mathematical sequence.
 * References to the sequences involved in the OEIS entry.
+
+---
+
+## My Mathematica Specs.
+
+Currently I have access to two PCs that have:
+
+* Mathematica v12.1.1.0 (which I use the most)
+* Mathematica v13.3.1.
+
+and where I develop the Mathematica programs that I upload to the OEIS database.
+
+Finally, I run some tests for the Mathematica programs in the Wolfram cloud service, mainly to look for any optimization on the programs and to test the execution time that the programs need due to the excellent computational power that the Wolfram cloud brings.
+
+
+
+
