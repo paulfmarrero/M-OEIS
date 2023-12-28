@@ -37,6 +37,10 @@ and where I develop the Mathematica programs that I upload to the OEIS database.
 
 Finally, I run some tests for the Mathematica programs in the Wolfram cloud service, mainly to look for any optimization on the programs and to test the execution time that the programs need due to the excellent computational power that the Wolfram cloud brings.
 
+---
+
+## Acknoledgements.
+
 
 
 
