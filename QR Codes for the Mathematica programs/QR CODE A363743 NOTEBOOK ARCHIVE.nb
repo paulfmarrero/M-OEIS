@@ -1,0 +1,117 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3810,        109]
+NotebookOptionsPosition[      3206,         89]
+NotebookOutlinePosition[      3602,        105]
+CellTagsIndexPosition[      3559,        102]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[{
+ StyleBox["QR-CODE To the Extended dataset produced by the Integer sequence \
+(A363743): ",
+  FontColor->GrayLevel[0]],
+ StyleBox["a(n)",
+  FontSlant->"Italic",
+  FontColor->GrayLevel[0]],
+ StyleBox[" = ",
+  FontColor->GrayLevel[0]],
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[{
+     SqrtBox[
+      RowBox[{
+        InterpretationBox[
+         SubscriptBox["log", "10"], Log10, AutoDelete -> True], "(", 
+        RowBox[{"n", "!"}], ")"}]]},
+    "Floor"], TraditionalForm]],
+  CellChangeTimes->{{3.910642459844266*^9, 3.9106425355075936`*^9}},
+  FontColor->GrayLevel[0],ExpressionUUID->
+  "2051037f-6b5a-4b60-a41c-080df9f86a13"],
+ StyleBox[" stored on the Wolfram Notebook Archive (notebookarchive.org). ",
+  FontColor->GrayLevel[0]]
+}], "Subtitle",
+ CellChangeTimes->{{3.914009846875487*^9, 3.9140099066339045`*^9}},
+ TextAlignment->Center,ExpressionUUID->"ae240143-45f1-4111-ad0a-16a02c331def"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BarcodeImage", "[", 
+  RowBox[{
+  "\"\<https://notebookarchive.org/extended-dataset-produced-by-the-integer-\
+sequence-a363743--2023-12-2ecqz2i/\>\"", ",", "\"\<QR\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.913954749129713*^9, 3.9139548301723485`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"d02d2924-d6d5-46a3-9f97-106dfa972f50"],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[RasterBox[CompressedData["
+1:eJzt0ktKBGEMhdFuR27DXTh16FRXoKDOFFpB3IcLVsFBEe6XpBoHnfIGtB5/
+HidNXdy/3Dye7Xa71/Pvfzd371eHw93H7c/D9fPbw9PD4fL+5/jz9y+L/W8s
+7+l5WUPX+O6YsOn0TXsRsZbuqZ7MyqlybZptymrUfHqX7ar6q7k2bdeU5URL
+rFvjt+l/mGhWPO/0oD42bc/UqVVn1JNmxx60l01zTRSZ7S+ux4RNp21S3xlF
+Jz/rfcxMm2aZ6BvLvkGVQ/6qnq42zTZlOfHby86ynPiOdrNproki1lb9lY32
+yTyZy6bTN6nceB57ZHNo5+y3UDNsmm1S/eiZcmJUNWvObZpjUt8dzVD30VDl
+0H202DTT1Lnv1C7fVe+pr6q3aY4p1qlc6hlzs32rPdU8m7ZjovqOszOnmmXT
+TBNFnKF60TntWt1XLptmmFRP6qv2Uf44V+2b/TY2zTXRjMpDhk4P6mPTbBP1
+UTOr/iqn6r8TYdN8U5y/Nr/aM9uN3DbNM8Ve1J8M2cxqv07YNMuUGZSpOlM7
+klfl2bQtU+Xr7ELGWNfJsWmWaXlOkblU3/he9aIeVGfTHFN2XlnJke2hdqB3
+Ns02kS2b1dmJ3CrPpm2ZVO5aZ2ZQJlVr0zxTFZ2Z2VzanfrYNNtEvWIP6q/y
+o0f1ifmVxaY5pr0I6tl5Rz2rvmp/m2aa1Lea5WU51HdN2LRtU3f2fhHxudoj
+28embZnUlRxqjnJSrU3zTVSbmSsT5XdcNs01Uaia7m5xLu3ecdg0x/QFJ4Q0
+rg==
+    "], {{0, 148.}, {148., 0}}, {0, 1},
+    ColorFunction->GrayLevel],
+   BoxForm`ImageTag["Bit", ColorSpace -> Automatic, Interleaving -> None],
+   Selectable->False],
+  DefaultBaseStyle->"ImageGraphics",
+  ImageSize->{148., Automatic},
+  ImageSizeRaw->{148., 148.},
+  PlotRange->{{0, 148.}, {0, 148.}}]], "Output",
+ CellChangeTimes->{3.9139548346096025`*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"925640f3-ddba-4d23-b839-d0ba73a27aea"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1008, 678},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 9, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"2d48ff0d-f98e-4eec-9675-9544a7568837"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 910, 25, 92, "Subtitle",ExpressionUUID->"ae240143-45f1-4111-ad0a-16a02c331def"],
+Cell[CellGroupData[{
+Cell[1515, 51, 358, 6, 48, "Input",ExpressionUUID->"d02d2924-d6d5-46a3-9f97-106dfa972f50"],
+Cell[1876, 59, 1302, 26, 165, "Output",ExpressionUUID->"925640f3-ddba-4d23-b839-d0ba73a27aea"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
