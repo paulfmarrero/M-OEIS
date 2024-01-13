@@ -1,7 +1,7 @@
 # A366581: a(n) = phi(p(n)), where phi is Euler's Totient function (A000010) and p(n) is the number of partitions of n (A000041).
 
-Mathematica program:
+-> Mathematica program:
 
 Table[EulerPhi[PartitionsP[n]], {n, 0, 48}] (*Paul F.Marrero Romero,Oct 14 2023*) 
 
-[Link to the OEIS A366581 entry:](https://oeis.org/A366581)
+https://oeis.org/A366581
