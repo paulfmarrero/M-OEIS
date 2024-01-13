@@ -1,0 +1,7 @@
+# A348960: a(n) = floor(log_10(Pi*n!)).
+
+-> MATHEMATICA PROGRAM:
+
+Array[Floor@ Log10[Pi*#!] &, 71, 0] (* Michael De Vlieger, Nov 05 2021 *)
+
+https://oeis.org/A348960
