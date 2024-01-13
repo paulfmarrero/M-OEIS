@@ -1,6 +1,6 @@
-# A363743 
+# A363743: a(n) = floor(sqrt(log_10(n!))).
 
--> Mathematica program:
+-> MATHEMATICA program:
 
 Array[Floor@ Sqrt[Log10[#!]] &, 93,0]
 
