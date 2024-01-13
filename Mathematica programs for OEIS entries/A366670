@@ -1,0 +1,7 @@
+# A366670: Smallest prime dividing 6^n + 1.
+
+-> MATHEMATICA program: 
+
+Table[FactorInteger[6^n + 1][[1, 1]], {n, 0, 68}] (*Paul F.Marrero Romero,Oct 17 2023*)
+
+https://oeis.org/A366670 
