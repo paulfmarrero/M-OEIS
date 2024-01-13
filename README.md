@@ -51,6 +51,8 @@ Finally, I would like to express my gratitude to the staff and users of the On-L
 
 If you want to check all my contributions to the Encyclopedia, then you can simply visit my OEIS-Wikipedia: [Paul F. Marrero Romero](https://oeis.org/wiki/User:Paul_F._Marrero_Romero)
 
+![QR CODE TO MY OEIS WIKI](https://github.com/paulfmarrero/M-OEIS/assets/115388841/7ed33e3e-5085-44a0-9102-caf20f15afea)
+
 ---
 
 ## References.
