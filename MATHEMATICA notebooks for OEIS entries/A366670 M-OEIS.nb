@@ -1,0 +1,392 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     15488,        384]
+NotebookOptionsPosition[     13243,        334]
+NotebookOutlinePosition[     13639,        350]
+CellTagsIndexPosition[     13596,        347]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"3882dd4f-9682-427b-b593-4586d0bbd490"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox[ButtonBox["A366670:",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://oeis.org/A366670"], None},
+  ButtonNote->"https://oeis.org/A366670"],
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox[" ",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["Smallest prime dividing 6^n + 1.",
+  FontColor->GrayLevel[0]]
+}], "Subtitle",
+ CellChangeTimes->{{3.9140353805414863`*^9, 3.9140353828156166`*^9}, {
+  3.914035439248844*^9, 3.914035531514121*^9}, {3.914042327635559*^9, 
+  3.9140423276385593`*^9}, {3.9141053290948753`*^9, 3.9141053368843193`*^9}, {
+  3.914105379878774*^9, 3.9141054077753696`*^9}, {3.914105476679311*^9, 
+  3.9141055213958683`*^9}, {3.9141056591537476`*^9, 
+  3.9141056867623267`*^9}},ExpressionUUID->"b4795a11-eb07-400a-88dc-\
+581af0c5de92"],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"f5006b2d-6878-44d4-9787-b0714fc0a318"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["MATHEMATICA PROGRAM:",
+ FontColor->RGBColor[
+  1., 0.1411764705882353, 0.1411764705882353]]], "Subsection",
+ CellChangeTimes->{{3.9140359051472893`*^9, 3.914035912470708*^9}, {
+  3.914037499898059*^9, 
+  3.914037502827226*^9}},ExpressionUUID->"47e7d3ca-8b4e-4c5a-8aa1-\
+06edad385852"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"FactorInteger", "[", 
+      RowBox[{
+       RowBox[{"6", "^", "n"}], "+", "1"}], "]"}], "[", 
+     RowBox[{"[", 
+      RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"n", ",", "0", ",", "68"}], "}"}]}], "]"}], " ", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"Paul", " ", 
+     RowBox[{"F", ".", "Marrero"}], " ", "Romero"}], ",", 
+    RowBox[{"Oct", " ", "17", " ", "2023"}]}], "*)"}]}]], "Input",
+ CellChangeTimes->{{3.914105720572261*^9, 3.9141057205742607`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"0aeaf388-15cf-424f-91f5-88f0efafa149"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "2", ",", "7", ",", "37", ",", "7", ",", "1297", ",", "7", ",", "13", ",", 
+   "7", ",", "17", ",", "7", ",", "37", ",", "7", ",", "1297", ",", "7", ",", 
+   "37", ",", "7", ",", "353", ",", "7", ",", "13", ",", "7", ",", "41", ",", 
+   "7", ",", "37", ",", "7", ",", "17", ",", "7", ",", "37", ",", "7", ",", 
+   "281", ",", "7", ",", "13", ",", "7", ",", "2753", ",", "7", ",", "37", 
+   ",", "7", ",", "577", ",", "7", ",", "37", ",", "7", ",", "17", ",", "7", 
+   ",", "13", ",", "7", ",", "89", ",", "7", ",", "37", ",", "7", ",", "193", 
+   ",", "7", ",", "37", ",", "7", ",", "1297", ",", "7", ",", "13", ",", "7", 
+   ",", "17", ",", "7", ",", "37", ",", "7", ",", "41", ",", "7", ",", "37", 
+   ",", "7", ",", "4926056449", ",", "7", ",", "13", ",", "7", ",", "137"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.914105728480713*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"322a6823-b2f1-4dd6-a5e6-7557205f18ae"]
+}, Open  ]],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"a2699a52-9f0b-472f-b12b-7507432ed118"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Formula:",
+ FontColor->GrayLevel[0]]], "Subsection",
+ CellFrameColor->GrayLevel[1],
+ CellChangeTimes->{{3.914037864728516*^9, 3.9140379012726064`*^9}, {
+   3.914037956990793*^9, 3.914037989032626*^9}, 
+   3.914038908273988*^9},ExpressionUUID->"a12a59b9-840e-451c-93df-\
+452098114b6f"],
+
+Cell["\<\
+a(n) = A020639(A062394(n)).  - Paul F. Marrero Romero, Oct 17 2023\
+\>", "Text",
+ CellChangeTimes->{{3.914038915741415*^9, 3.9140389157514153`*^9}, {
+  3.914038997163071*^9, 3.91403905413733*^9}, {3.9141057641927557`*^9, 
+  3.914105772700242*^9}},
+ FontColor->GrayLevel[
+  0],ExpressionUUID->"adfb9671-c855-4ac4-8bc6-edc2e881b7bd"],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"574bf04b-9c81-402b-a5eb-8cf676c1b791"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Plot section:",
+ FontColor->GrayLevel[0]]], "Subsection",
+ CellChangeTimes->{{3.9140391582054806`*^9, 3.914039201366949*^9}, {
+  3.9140395016317225`*^9, 
+  3.914039516371566*^9}},ExpressionUUID->"a0cf4c07-671a-4e83-a0da-\
+da09baba7d40"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   RowBox[{"DiscretePlot", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"FactorInteger", "[", 
+       RowBox[{
+        RowBox[{"6", "^", "n"}], "+", "1"}], "]"}], "[", 
+      RowBox[{"[", 
+       RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"n", ",", "0", ",", "68"}], "}"}], ",", " ", 
+     RowBox[{"AxesLabel", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"\"\<n\>\"", ",", " ", "\"\<A366670(n)\>\""}], "}"}]}], ",", 
+     " ", 
+     RowBox[{"LabelStyle", "\[Rule]", 
+      RowBox[{"Directive", " ", "[", 
+       RowBox[{"Black", ",", " ", "Bold"}], "]"}]}]}], "]"}], " "}],
+  FontColor->GrayLevel[0]]], "Input",
+ CellChangeTimes->{{3.9140395196617537`*^9, 3.914039534391794*^9}, {
+   3.914039610589153*^9, 3.914039612910286*^9}, {3.9140396636951904`*^9, 
+   3.9140396688074827`*^9}, {3.914040078380909*^9, 3.914040124110524*^9}, 
+   3.914040156050351*^9, {3.914040188671217*^9, 3.9140401951975904`*^9}, {
+   3.9140402252163076`*^9, 3.9140403281911974`*^9}, {3.9141058189008846`*^9, 
+   3.9141058314176006`*^9}},
+ FontColor->RGBColor[0, 0, 1],
+ CellLabel->"In[2]:=",ExpressionUUID->"a45b72e0-8738-40c7-9a1b-8659415994e6"],
+
+Cell[BoxData[
+ GraphicsBox[{{
+    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.007333333333333334], 
+     AbsoluteThickness[1.6], 
+     TagBox[{
+       {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+        0.007333333333333334], AbsoluteThickness[1.6], Opacity[0.2], 
+        LineBox[{},
+         VertexColors->None]}, 
+       {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+        0.007333333333333334], AbsoluteThickness[1.6], Opacity[0.2], 
+        LineBox[{{{0., 2.}, {0., 0}}, {{1., 7.}, {1., 0}}, {{2., 37.}, {
+           2., 0}}, {{3., 7.}, {3., 0}}, {{4., 1297.}, {4., 0}}, {{5., 7.}, {
+           5., 0}}, {{6., 13.}, {6., 0}}, {{7., 7.}, {7., 0}}, {{8., 17.}, {
+           8., 0}}, {{9., 7.}, {9., 0}}, {{10., 37.}, {10., 0}}, {{11., 7.}, {
+           11., 0}}, {{12., 1297.}, {12., 0}}, {{13., 7.}, {13., 0}}, {{14., 
+           37.}, {14., 0}}, {{15., 7.}, {15., 0}}, {{16., 353.}, {16., 0}}, {{
+           17., 7.}, {17., 0}}, {{18., 13.}, {18., 0}}, {{19., 7.}, {
+           19., 0}}, {{20., 41.}, {20., 0}}, {{21., 7.}, {21., 0}}, {{22., 
+           37.}, {22., 0}}, {{23., 7.}, {23., 0}}, {{24., 17.}, {24., 0}}, {{
+           25., 7.}, {25., 0}}, {{26., 37.}, {26., 0}}, {{27., 7.}, {
+           27., 0}}, {{28., 281.}, {28., 0}}, {{29., 7.}, {29., 0}}, {{30., 
+           13.}, {30., 0}}, {{31., 7.}, {31., 0}}, {{32., 2753.}, {
+           32., 0}}, {{33., 7.}, {33., 0}}, {{34., 37.}, {34., 0}}, {{35., 
+           7.}, {35., 0}}, {{36., 577.}, {36., 0}}, {{37., 7.}, {37., 0}}, {{
+           38., 37.}, {38., 0}}, {{39., 7.}, {39., 0}}, {{40., 17.}, {
+           40., 0}}, {{41., 7.}, {41., 0}}, {{42., 13.}, {42., 0}}, {{43., 
+           7.}, {43., 0}}, {{44., 89.}, {44., 0}}, {{45., 7.}, {45., 0}}, {{
+           46., 37.}, {46., 0}}, {{47., 7.}, {47., 0}}, {{48., 193.}, {
+           48., 0}}, {{49., 7.}, {49., 0}}, {{50., 37.}, {50., 0}}, {{51., 
+           7.}, {51., 0}}, {{52., 1297.}, {52., 0}}, {{53., 7.}, {53., 0}}, {{
+           54., 13.}, {54., 0}}, {{55., 7.}, {55., 0}}, {{56., 17.}, {
+           56., 0}}, {{57., 7.}, {57., 0}}, {{58., 37.}, {58., 0}}, {{59., 
+           7.}, {59., 0}}, {{60., 41.}, {60., 0}}, {{61., 7.}, {61., 0}}, {{
+           62., 37.}, {62., 0}}, {{63., 7.}, {63., 0}}, {{64., 
+           4.926056449*^9}, {64., 0}}, {{65., 7.}, {65., 0}}, {{66., 13.}, {
+           66., 0}}, {{67., 7.}, {67., 0}}, {{68., 137.}, {68., 0}}},
+         VertexColors->None]}},
+      Annotation[#, "Charting`Private`Tag$3300#1"]& ]}, 
+    TagBox[
+     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.007333333333333334],
+       AbsoluteThickness[1.6], {}, PointBox[CompressedData["
+1:eJxdkjtKBEEURRujCTswMDBoRURExP9n/Ey10z3/r4Fg6IBgJibGxazAwC3M
+PmYdswpxBY6+W0Kdhubw3uHVfV30xuT1/nklSZJy+f4SjzN81YzrLur7O9UV
+F/vUWHyqXoVfE3fRD8zEQ3ETfgv52/A7yGfOHub34Q+M6Tv2CP4I5x7Dn+j8
+QvUp/Bnyz+EvkHsJX8X8Ffy18eNN9Q38LfavwTvjdKYcB5/H+T6HV78yxZ7B
+1zFfhw/3pu//v8fgy3h/X8I3jO5BvgHfRH4TvmXMXuRb8G3Mt+E7xvD/+Q58
+F/t34Xti+P4efB/5ffiB+ro3P4AfYn4IP1oy9YvH7/yvdKPY+1Br/zl8MjZm
+T+4HSgRXng==
+       "]], {}},
+     Annotation[#, "Charting`Private`Tag$3300#1"]& ]}, {}, {}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->True,
+  AxesLabel->{
+    FormBox["\"n\"", TraditionalForm], 
+    FormBox["\"A366670(n)\"", TraditionalForm]},
+  AxesOrigin->{0, 0},
+  DisplayFunction->Identity,
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImageSize->{Automatic, 384.20067599989017`},
+  LabelStyle->Directive[
+    GrayLevel[0], Bold],
+  Method->{
+   "MessagesHead" -> DiscretePlot, "AxisPadding" -> Scaled[0.02], 
+    "DefaultBoundaryStyle" -> Automatic, 
+    "DefaultGraphicsInteraction" -> {
+     "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+      "Effects" -> {
+       "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+        "Droplines" -> {
+         "freeformCursorMode" -> True, 
+          "placement" -> {"x" -> "All", "y" -> "None"}}}}, "DefaultMeshStyle" -> 
+    AbsolutePointSize[6], "DefaultPlotStyle" -> {
+      Directive[
+       RGBColor[0.368417, 0.506779, 0.709798], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.880722, 0.611041, 0.142051], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.560181, 0.691569, 0.194885], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.922526, 0.385626, 0.209179], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.528488, 0.470624, 0.701351], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.772079, 0.431554, 0.102387], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.363898, 0.618501, 0.782349], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[1, 0.75, 0], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.647624, 0.37816, 0.614037], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.571589, 0.586483, 0.], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.915, 0.3325, 0.2125], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.40082222609352647`, 0.5220066643438841, 0.85], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.9728288904374106, 0.621644452187053, 0.07336199581899142], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.736782672705901, 0.358, 0.5030266573755369], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.28026441037696703`, 0.715, 0.4292089322474965], 
+       AbsoluteThickness[1.6]]}, "DomainPadding" -> Scaled[0.02], 
+    "PointSizeFunction" -> "SmallPointSize", "RangePadding" -> Scaled[0.05]},
+  PlotRange->{{0, 68}, {0, 92.}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.05], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{3.914040329315262*^9, 3.9141058481005545`*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"a34cb166-f980-4204-9841-662611789365"]
+}, Open  ]],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"a0890a3c-dbff-4b86-8a2c-697e01469460"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["References:",
+ FontColor->GrayLevel[0]]], "Subsection",
+ CellChangeTimes->{{3.9140417790571823`*^9, 3.9140418238277426`*^9}, {
+  3.914041894904808*^9, 
+  3.914041944354636*^9}},ExpressionUUID->"bd910953-2fc0-4bf5-8f65-\
+f656973547aa"],
+
+Cell[TextData[{
+ "Sean A. Irvine, Smallest prime dividing 6^n+1., Entry A366670 in The \
+On-Line Encyclopedia of Integer Sequences, ",
+ ButtonBox["https://oeis.org/A366670",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://oeis.org/A366670"], None},
+  ButtonNote->"https://oeis.org/A366670"]
+}], "Text",
+ CellChangeTimes->{{3.914042002357954*^9, 3.9140421130872874`*^9}, {
+  3.9140421570238004`*^9, 3.9140421570258007`*^9}, {3.9140422390364914`*^9, 
+  3.914042251006176*^9}, {3.9141059753138313`*^9, 3.9141060107238564`*^9}, {
+  3.9141060540363283`*^9, 
+  3.9141060648489466`*^9}},ExpressionUUID->"1977fc88-d5ed-4023-99d0-\
+57ed2f4c2c5e"],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"50413956-e48d-459b-b5e0-f0080052ee59"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1008, 670},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 9, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"2c2c61ac-2e40-4a9c-bf9a-7f32cfe8bcf6"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 99, 1, 4, "PageBreak",ExpressionUUID->"3882dd4f-9682-427b-b593-4586d0bbd490",
+ PageBreakBelow->True],
+Cell[CellGroupData[{
+Cell[682, 25, 778, 18, 53, "Subtitle",ExpressionUUID->"b4795a11-eb07-400a-88dc-581af0c5de92"],
+Cell[1463, 45, 99, 1, 4, "PageBreak",ExpressionUUID->"f5006b2d-6878-44d4-9787-b0714fc0a318",
+ PageBreakBelow->True],
+Cell[CellGroupData[{
+Cell[1587, 50, 308, 6, 53, "Subsection",ExpressionUUID->"47e7d3ca-8b4e-4c5a-8aa1-06edad385852"],
+Cell[CellGroupData[{
+Cell[1920, 60, 659, 18, 28, "Input",ExpressionUUID->"0aeaf388-15cf-424f-91f5-88f0efafa149"],
+Cell[2582, 80, 960, 15, 52, "Output",ExpressionUUID->"322a6823-b2f1-4dd6-a5e6-7557205f18ae"]
+}, Open  ]],
+Cell[3557, 98, 99, 1, 4, "PageBreak",ExpressionUUID->"a2699a52-9f0b-472f-b12b-7507432ed118",
+ PageBreakBelow->True]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3693, 104, 308, 6, 53, "Subsection",ExpressionUUID->"a12a59b9-840e-451c-93df-452098114b6f"],
+Cell[4004, 112, 341, 7, 34, "Text",ExpressionUUID->"adfb9671-c855-4ac4-8bc6-edc2e881b7bd"],
+Cell[4348, 121, 99, 1, 4, "PageBreak",ExpressionUUID->"574bf04b-9c81-402b-a5eb-8cf676c1b791",
+ PageBreakBelow->True]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4484, 127, 260, 5, 53, "Subsection",ExpressionUUID->"a0cf4c07-671a-4e83-a0da-da09baba7d40"],
+Cell[CellGroupData[{
+Cell[4769, 136, 1196, 28, 48, "Input",ExpressionUUID->"a45b72e0-8738-40c7-9a1b-8659415994e6"],
+Cell[5968, 166, 6085, 131, 401, "Output",ExpressionUUID->"a34cb166-f980-4204-9841-662611789365"]
+}, Open  ]],
+Cell[12068, 300, 99, 1, 4, "PageBreak",ExpressionUUID->"a0890a3c-dbff-4b86-8a2c-697e01469460",
+ PageBreakBelow->True]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12204, 306, 258, 5, 53, "Subsection",ExpressionUUID->"bd910953-2fc0-4bf5-8f65-f656973547aa"],
+Cell[12465, 313, 648, 14, 34, "Text",ExpressionUUID->"1977fc88-d5ed-4023-99d0-57ed2f4c2c5e"],
+Cell[13116, 329, 99, 1, 4, "PageBreak",ExpressionUUID->"50413956-e48d-459b-b5e0-f0080052ee59",
+ PageBreakBelow->True]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
