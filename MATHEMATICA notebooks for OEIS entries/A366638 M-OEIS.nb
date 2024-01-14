@@ -1,0 +1,287 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10119,        279]
+NotebookOptionsPosition[      7998,        231]
+NotebookOutlinePosition[      8394,        247]
+CellTagsIndexPosition[      8351,        244]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"867bea3a-8992-4687-b6ff-0ea9717e4a64"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox[ButtonBox["A366638:",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://oeis.org/A366638"], None},
+  ButtonNote->"https://oeis.org/A366638"],
+  FontColor->RGBColor[0, 0, 1]],
+ " ",
+ StyleBox["Sum of the divisors of 7^n + 1.",
+  FontColor->GrayLevel[0]]
+}], "Subtitle",
+ CellChangeTimes->{{3.91426345493921*^9, 3.914263466283859*^9}, {
+  3.9142640972505474`*^9, 3.914264108576195*^9}, {3.914264153534766*^9, 
+  3.9142641709837646`*^9}},ExpressionUUID->"8255fb74-ea3a-4bf5-8097-\
+ea4bf1d35287"],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"f5006b2d-6878-44d4-9787-b0714fc0a318"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["MATHEMATICA PROGRAM:",
+ FontColor->RGBColor[
+  1., 0.1411764705882353, 0.1411764705882353]]], "Subsection",
+ CellChangeTimes->{{3.9140359051472893`*^9, 3.914035912470708*^9}, {
+  3.914037499898059*^9, 
+  3.914037502827226*^9}},ExpressionUUID->"47e7d3ca-8b4e-4c5a-8aa1-\
+06edad385852"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"DivisorSigma", "[", 
+   RowBox[{"1", ",", 
+    RowBox[{
+     RowBox[{"7", "^", 
+      RowBox[{"Range", "[", 
+       RowBox[{"0", ",", "21"}], "]"}]}], "+", "1"}]}], "]"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"Paul", " ", 
+     RowBox[{"F", ".", "Marrero"}], " ", "Romero"}], ",", " ", 
+    RowBox[{"Oct", " ", "16", " ", "2023"}]}], " ", "*)"}]}]], "Input",
+ CellChangeTimes->{{3.914264190335871*^9, 
+  3.914264200907476*^9}},ExpressionUUID->"265df946-f651-4fba-b4fe-\
+021ec1e00fbc"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "3", ",", "15", ",", "93", ",", "660", ",", "3606", ",", "34560", ",", 
+   "236964", ",", "1559520", ",", "9155916", ",", "77423280", ",", 
+   "530807472", ",", "3868683120", ",", "21224771760", ",", "185094572580", 
+   ",", "1261494915594", ",", "9988783073280", ",", "49990612274316", ",", 
+   "436182213726030", ",", "3279858902194056", ",", "21372989348391720", ",", 
+   "122709716651985624", ",", "1082323574100172800"}], "}"}]], "Output",
+ CellChangeTimes->{3.9142641919979663`*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"d2f8af8e-3833-4010-acfa-94c38506fda9"]
+}, Open  ]],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"a2699a52-9f0b-472f-b12b-7507432ed118"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Formula:",
+ FontColor->GrayLevel[0]]], "Subsection",
+ CellFrameColor->GrayLevel[1],
+ CellChangeTimes->{{3.914037864728516*^9, 3.9140379012726064`*^9}, {
+   3.914037956990793*^9, 3.914037989032626*^9}, 
+   3.914038908273988*^9},ExpressionUUID->"a12a59b9-840e-451c-93df-\
+452098114b6f"],
+
+Cell["a(n) = sigma(7^n+1) = A000203(A034491(n)).", "Text",
+ CellChangeTimes->{
+  3.9142642481871805`*^9},ExpressionUUID->"381e67bf-7ea6-44bf-83e0-\
+2505e2ae66da"],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"574bf04b-9c81-402b-a5eb-8cf676c1b791"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Plot section:",
+ FontColor->GrayLevel[0]]], "Subsection",
+ CellChangeTimes->{{3.9140391582054806`*^9, 3.914039201366949*^9}, {
+  3.9140395016317225`*^9, 
+  3.914039516371566*^9}},ExpressionUUID->"a0cf4c07-671a-4e83-a0da-\
+da09baba7d40"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"ListPlot", "[", 
+   RowBox[{
+    RowBox[{"DivisorSigma", "[", 
+     RowBox[{"1", ",", 
+      RowBox[{
+       RowBox[{"7", "^", 
+        RowBox[{"Range", "[", 
+         RowBox[{"0", ",", "21"}], "]"}]}], "+", "1"}]}], "]"}], ",", " ", 
+    RowBox[{"Joined", "\[Rule]", "True"}], ",", " ", 
+    RowBox[{"PlotStyle", "\[Rule]", " ", "Blue"}], ",", " ", 
+    RowBox[{"AxesLabel", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\"\<n\>\"", ",", " ", "\"\<A366638(n)\>\""}], "}"}]}], ",", 
+    " ", 
+    RowBox[{"LabelStyle", "\[Rule]", 
+     RowBox[{"Directive", " ", "[", 
+      RowBox[{"Black", ",", " ", "Bold"}], "]"}]}]}], "]"}],
+  FontColor->GrayLevel[0]]], "Input",
+ CellChangeTimes->{{3.9140395196617537`*^9, 3.914039534391794*^9}, {
+   3.914039610589153*^9, 3.914039612910286*^9}, {3.9140396636951904`*^9, 
+   3.9140396688074827`*^9}, {3.914040078380909*^9, 3.914040124110524*^9}, 
+   3.914040156050351*^9, {3.914040188671217*^9, 3.9140401951975904`*^9}, {
+   3.9140402252163076`*^9, 3.9140403281911974`*^9}, {3.914264394202532*^9, 
+   3.9142645824863014`*^9}, 3.9142646546194267`*^9, 3.914264974028696*^9, {
+   3.914265020306343*^9, 3.914265037357318*^9}},
+ FontColor->RGBColor[0, 0, 1],
+ CellLabel->"In[6]:=",ExpressionUUID->"a45b72e0-8738-40c7-9a1b-8659415994e6"],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {{}, {}, 
+    {RGBColor[0, 0, 1], PointSize[0.012833333333333334`], AbsoluteThickness[
+     1.6], LineBox[CompressedData["
+1:eJxTTMoPSmViYGAQAWIQDQEf7CE0hwNUAErrOaCIO4RD+QIQekELlC8CoXXW
+QPkSEPrBAyhfBkwrvOVxhPAVwPwHp82hfCUQv2FlWSKUrwLiH+gqnQTlq4H4
+G6oW74fyNUD8vLeX3kD5WkD+AafEI8JOEL4OkC/Uat/j6gT3xwIF3/zoIijf
+ACh/YXey9iIo39CBwe1Z+Jrdx6B8I4cHXxriPE//gPKNHQTW9wWy+6k71wvc
+Np7jauzwLeyTaqeirTMAaS86CQ==
+      "]]}}, {{}, {}}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{
+    FormBox["\"n\"", TraditionalForm], 
+    FormBox["\"A366638(n)\"", TraditionalForm]},
+  AxesOrigin->{0., 0},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImageSize->{759., Automatic},
+  LabelStyle->Directive[
+    GrayLevel[0], Bold],
+  Method->{
+   "OptimizePlotMarkers" -> True, "OptimizePlotMarkers" -> True, 
+    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        Identity[
+         Part[#, 1]], 
+        Identity[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        Identity[
+         Part[#, 1]], 
+        Identity[
+         Part[#, 2]]}& )}},
+  PlotRange->{{0., 22.}, {0, 8.19964725548415*^15}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.02], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{
+  3.9142645942609744`*^9, 3.914264656294523*^9, 3.9142649785829563`*^9, {
+   3.914265023469524*^9, 3.9142650397874575`*^9}},
+ CellLabel->"Out[6]=",ExpressionUUID->"67e9751a-c232-46b6-9b44-397c9645083f"]
+}, Open  ]],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"a0890a3c-dbff-4b86-8a2c-697e01469460"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["References:",
+ FontColor->GrayLevel[0]]], "Subsection",
+ CellChangeTimes->{{3.9140417790571823`*^9, 3.9140418238277426`*^9}, {
+  3.914041894904808*^9, 
+  3.914041944354636*^9}},ExpressionUUID->"bd910953-2fc0-4bf5-8f65-\
+f656973547aa"],
+
+Cell[TextData[{
+ "Sean A. Irvine, Sum of the divisors of 7^n+1., Entry A366638 in The On-Line \
+Encyclopedia of Integer Sequences, ",
+ ButtonBox["https://oeis.org/A366638",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://oeis.org/A366638"], None},
+  ButtonNote->"https://oeis.org/A366638"]
+}], "Text",
+ CellChangeTimes->{{3.914042002357954*^9, 3.9140421130872874`*^9}, {
+  3.9140421570238004`*^9, 3.9140421570258007`*^9}, {3.9140422390364914`*^9, 
+  3.914042251006176*^9}, {3.914265049713025*^9, 
+  3.9142651070813065`*^9}},ExpressionUUID->"1977fc88-d5ed-4023-99d0-\
+57ed2f4c2c5e"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1008, 670},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 9, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"c8da1c1f-2991-4808-bf38-8521b570d436"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 99, 1, 4, "PageBreak",ExpressionUUID->"867bea3a-8992-4687-b6ff-0ea9717e4a64",
+ PageBreakBelow->True],
+Cell[CellGroupData[{
+Cell[682, 25, 527, 14, 53, "Subtitle",ExpressionUUID->"8255fb74-ea3a-4bf5-8097-ea4bf1d35287"],
+Cell[1212, 41, 99, 1, 4, "PageBreak",ExpressionUUID->"f5006b2d-6878-44d4-9787-b0714fc0a318",
+ PageBreakBelow->True],
+Cell[CellGroupData[{
+Cell[1336, 46, 308, 6, 53, "Subsection",ExpressionUUID->"47e7d3ca-8b4e-4c5a-8aa1-06edad385852"],
+Cell[CellGroupData[{
+Cell[1669, 56, 534, 15, 28, "Input",ExpressionUUID->"265df946-f651-4fba-b4fe-021ec1e00fbc"],
+Cell[2206, 73, 608, 10, 71, "Output",ExpressionUUID->"d2f8af8e-3833-4010-acfa-94c38506fda9"]
+}, Open  ]],
+Cell[2829, 86, 99, 1, 4, "PageBreak",ExpressionUUID->"a2699a52-9f0b-472f-b12b-7507432ed118",
+ PageBreakBelow->True]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2965, 92, 308, 6, 53, "Subsection",ExpressionUUID->"a12a59b9-840e-451c-93df-452098114b6f"],
+Cell[3276, 100, 162, 3, 34, "Text",ExpressionUUID->"381e67bf-7ea6-44bf-83e0-2505e2ae66da"],
+Cell[3441, 105, 99, 1, 4, "PageBreak",ExpressionUUID->"574bf04b-9c81-402b-a5eb-8cf676c1b791",
+ PageBreakBelow->True]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3577, 111, 260, 5, 53, "Subsection",ExpressionUUID->"a0cf4c07-671a-4e83-a0da-da09baba7d40"],
+Cell[CellGroupData[{
+Cell[3862, 120, 1305, 28, 48, "Input",ExpressionUUID->"a45b72e0-8738-40c7-9a1b-8659415994e6"],
+Cell[5170, 150, 1796, 48, 485, "Output",ExpressionUUID->"67e9751a-c232-46b6-9b44-397c9645083f"]
+}, Open  ]],
+Cell[6981, 201, 99, 1, 4, "PageBreak",ExpressionUUID->"a0890a3c-dbff-4b86-8a2c-697e01469460",
+ PageBreakBelow->True]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7117, 207, 258, 5, 53, "Subsection",ExpressionUUID->"bd910953-2fc0-4bf5-8f65-f656973547aa"],
+Cell[7378, 214, 592, 13, 34, "Text",ExpressionUUID->"1977fc88-d5ed-4023-99d0-57ed2f4c2c5e"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
