@@ -1,0 +1,7 @@
+# A366637: Number of divisors of 7^n + 1.
+
+MATHEMATICA program:
+
+DivisorSigma[0, 7^Range[0, 62] + 1] (* Paul F. Marrero Romero, Oct 16 2023 *)
+
+https://oeis.org/A366637
