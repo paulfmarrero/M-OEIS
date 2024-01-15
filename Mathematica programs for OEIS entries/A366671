@@ -1,0 +1,7 @@
+# A366671: Smallest prime dividing 8^n + 1.
+
+-> MATHEMATICA program:
+
+Table[FactorInteger[8^n + 1][[1, 1]], {n, 0, 78}] (* Paul F. Marrero Romero, Oct 20 2023 *)
+
+https://oeis.org/A366671
