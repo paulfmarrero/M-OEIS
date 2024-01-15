@@ -1,0 +1,7 @@
+# A366630: a(n) = phi(6^n+1), where phi is Euler's totient function (A000010).
+
+-> MATHEMATICA program:
+
+EulerPhi[6^Range[0, 22] + 1] (* Paul F. Marrero Romero, Oct 17 2023 *)
+
+https://oeis.org/A366630
