@@ -1,0 +1,7 @@
+# A366717: Smallest prime dividing 12^n - 1.
+
+-> MATHEMATICA program:
+
+Table[FactorInteger[12^n - 1][[1, 1]], {n, 71}] (* Paul F. Marrero Romero, Oct 25 2023 *)
+
+https://oeis.org/A366717
