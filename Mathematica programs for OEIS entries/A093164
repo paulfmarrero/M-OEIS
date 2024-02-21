@@ -1,0 +1,7 @@
+# A093164: 	Primes of the form 50*R_k + 3, where R_k is the repunit (A002275) of length k.
+
+-> MATHEMATICA program: 
+
+Select[(5 (10^Range[74]) - 23)/ 9, PrimeQ] (* Paul F.Marrero Romero,Oct 20 2023 *)
+
+https://oeis.org/A093164
