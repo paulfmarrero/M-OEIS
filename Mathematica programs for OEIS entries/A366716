@@ -1,0 +1,7 @@
+# A366716: a(n) = phi(12^n+1), where phi is Euler's totient function (A000010).
+
+-> MATHEMATICA program: 
+
+EulerPhi[12^Range[0, 19] + 1] (* Paul F.Marrero Romero,Oct 27 2023 *)
+
+https://oeis.org/A366716
