@@ -1,4 +1,4 @@
-# A093164: 	Primes of the form 50*R_k + 3, where R_k is the repunit (A002275) of length k.
+# A093164: Primes of the form 50*R_k + 3, where R_k is the repunit (A002275) of length k.
 
 -> MATHEMATICA program: 
 
