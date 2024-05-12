@@ -1,0 +1,7 @@
+# A366478: 	a(n) = (3*n^4 - 4*n^3 + n^2 + 4*n + 4)/4.
+
+-> MATHEMATICA program: 
+
+Table[(3n^4 - 4n^3 + n^2 + 4n + 4) /4, {n, 0, 38}] (* Paul F. Marrero Romero, Nov 02 2023 *)
+
+https://oeis.org/A366478
