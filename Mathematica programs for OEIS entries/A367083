@@ -1,0 +1,7 @@
+# A367083: List of powers of 3 and powers of 4, in increasing order, starting with a(0) = 3^0 = 4^0 = 1.
+
+MATHEMATICA program: 
+
+With[{max = 2*10^10}, Union[3^Range[0, Log[3, max]], 4^Range[0, Log[4, max]]]] (*Paul F.Marrero Romero,Nov 14 2023*)
+
+https://oeis.org/A367083
